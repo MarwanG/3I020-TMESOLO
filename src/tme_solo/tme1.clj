@@ -65,8 +65,8 @@
        (reverse-vect [2])
        => [2]
 
-       (reverse-vect [:a :b :c :d])
-       => [:d :c :b :a])
+       (reverse-vect [:d :c :b :a])
+       => [:a :b :c :d])
 
 ;;; Exercice 2 :
 ;;; ==========
@@ -110,8 +110,7 @@
 (defn implication-binaire-trans [expr1 expr2]
   nil)
 
-(defn implication-binaire-trans [expr1 expr2]
-  nil)
+
 
 ;; afin de valider les tests ci-dessous:
 
@@ -122,7 +121,7 @@
        (==> true true) => true
 
        (==> false (+ 23 19)) => true
-       (==> true (+ 23 19)) => 42
+       (==> true (+ 22 19)) => 41
 
        (==> 42 (> 2 12)) => false
        )
@@ -151,7 +150,7 @@
 ;; afin de valider les tests ci-dessous:
 
 
-(facts "a propos de l'implication n-aire"
+(facts "à propos de l'implication n-aire"
        (===> false false) => true
        (===> false true) => true
        (===> true false) => false
